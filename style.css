@@ -16,9 +16,9 @@ section{
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
 }
-h1{
-    font-weight: 700;
-    margin: 20px 0px;
+.launchingsoon{
+    display: flex;
+    text-align: center;
     font-size: 3.5rem;
     
 }
@@ -97,19 +97,25 @@ input[type=email] {
     color: hsl(223, 100%, 88%);
 }
 
-@media only screen and (max-width: 600px) {
-    h1{
-        font-size: 2rem;
+@media only screen and (max-width: 375px) {
+    .launchingsoon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 1rem;
     }
-    input[type=submit] {
-        width: 430px;   
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+     input[type=email]{
+        width: 230px;
+        margin: 1rem;
      }
-     input[type=email] { 
-        padding: 12px 25px 12px 40px;
-        margin-left: 20px;
-      }
-      .imghold{
-          width: 150%;
-          height: 108%;
-      }
+     input[type=submit]{
+        width: 230px;
+        margin: 2rem;
+     }
+      
   }
